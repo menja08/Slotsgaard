@@ -1,0 +1,85 @@
+body{
+  background-color: deepskyblue;
+  text-align: center;
+}
+
+header{
+  background-color: orangered;
+}
+
+.menu{
+  background-color: pink;
+}
+
+.top{
+  background-color: burlywood;
+}
+
+.middle{
+  background-color: lightyellow;
+}
+
+.bottom{
+  background-color: lightgreen;
+}
+
+footer{
+  background-color: lightblue;
+}
+
+
+// larger screens
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 600px) {
+    body {
+      display: grid;
+      text-align: center;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-areas:
+              "header header header"
+              "menu1 menu2 menu3"// menu"
+              "Sec1 Sec2 Sec3"
+              "footer footer footer";
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    .menu1{
+      grid-area: menu1;
+      background-color: yellow;
+      // width: 150px;
+    }
+
+    .menu2{
+      grid-area: menu2;
+      background-color: orange;
+      // width: 150px;
+    }
+
+    .menu3{
+      grid-area: menu3;
+      background-color: aquamarine;
+      // width: 150px;
+    }
+
+    .Sec1 {
+      grid-area: Sec1;
+    }
+
+    .Sec2 {
+      grid-area: Sec2;
+    }
+
+    .Sec3 {
+      grid-area: Sec3;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  }
+
+}
