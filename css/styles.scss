@@ -38,13 +38,20 @@ footer{
       grid-template-columns: 33.3% 33.3% 33.3%;
       grid-template-areas:
               "header header header"
-              "menu1 menu2 menu3"// menu"
+              "menu menu menu"// menu"
               "Sec1 Sec2 Sec3"
               "footer footer footer";
     }
 
     header {
       grid-area: header;
+    }
+
+    .menu{
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-areas: "menu1 menu2 menu3 menu4 menu5";
     }
 
     .menu1{
@@ -65,6 +72,14 @@ footer{
       // width: 150px;
     }
 
+    .menu4{
+      grid-area: menu4;
+    }
+
+    .menu5{
+      grid-area: menu5;
+    }
+
     .Sec1 {
       grid-area: Sec1;
     }
@@ -79,6 +94,21 @@ footer{
 
     footer {
       grid-area: footer;
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-areas: "kontakt job investor";
+    }
+
+    .kontakt{
+      grid-area: kontakt;
+    }
+
+    .job{
+      grid-area: job;
+    }
+
+    .investor{
+      grid-area: investor;
     }
   }
 

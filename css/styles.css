@@ -26,10 +26,16 @@ footer {
       display: grid;
       text-align: center;
       grid-template-columns: 33.3% 33.3% 33.3%;
-      grid-template-areas: "header header header" "menu1 menu2 menu3" "Sec1 Sec2 Sec3" "footer footer footer"; }
+      grid-template-areas: "header header header" "menu menu menu" "Sec1 Sec2 Sec3" "footer footer footer"; }
 
     header {
       grid-area: header; }
+
+    .menu {
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-areas: "menu1 menu2 menu3 menu4 menu5"; }
 
     .menu1 {
       grid-area: menu1;
@@ -43,6 +49,12 @@ footer {
       grid-area: menu3;
       background-color: aquamarine; }
 
+    .menu4 {
+      grid-area: menu4; }
+
+    .menu5 {
+      grid-area: menu5; }
+
     .Sec1 {
       grid-area: Sec1; }
 
@@ -53,6 +65,18 @@ footer {
       grid-area: Sec3; }
 
     footer {
-      grid-area: footer; } } }
+      grid-area: footer;
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-areas: "kontakt job investor"; }
+
+    .kontakt {
+      grid-area: kontakt; }
+
+    .job {
+      grid-area: job; }
+
+    .investor {
+      grid-area: investor; } } }
 
 /*# sourceMappingURL=styles.css.map */
