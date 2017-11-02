@@ -1,6 +1,7 @@
 body {
   background-color: deepskyblue;
-  text-align: center; }
+  text-align: center;
+  font-family: "Arial Narrow", sans-serif; }
 
 header {
   background-color: orangered; }
@@ -8,25 +9,19 @@ header {
 .menu {
   background-color: pink; }
 
-.top {
-  background-color: burlywood; }
-
-.middle {
-  background-color: lightyellow; }
-
-.bottom {
-  background-color: lightgreen; }
-
 footer {
   background-color: lightblue; }
 
 @supports (grid-area: auto) {
   @media screen and (min-width: 600px) {
+    @import url(//fonts.googleapis.com/css?family=Noto+Sans);
     body {
       display: grid;
+      margin: auto;
       text-align: center;
+      font-family: "Noto+Sans", sans-serif;
       grid-template-columns: 33.3% 33.3% 33.3%;
-      grid-template-areas: "header header header" "menu menu menu" "Sec1 Sec2 Sec3" "footer footer footer"; }
+      grid-template-areas: "header header header" "menu menu menu" "Sec1 Sec2 Sec3" "Sec4 Sec5 Sec6" "footer footer footer"; }
 
     header {
       grid-area: header; }
@@ -38,16 +33,13 @@ footer {
       grid-template-areas: "menu1 menu2 menu3 menu4 menu5"; }
 
     .menu1 {
-      grid-area: menu1;
-      background-color: yellow; }
+      grid-area: menu1; }
 
     .menu2 {
-      grid-area: menu2;
-      background-color: orange; }
+      grid-area: menu2; }
 
     .menu3 {
-      grid-area: menu3;
-      background-color: aquamarine; }
+      grid-area: menu3; }
 
     .menu4 {
       grid-area: menu4; }
@@ -63,6 +55,15 @@ footer {
 
     .Sec3 {
       grid-area: Sec3; }
+
+    .Sec4 {
+      grid-area: Sec4; }
+
+    .Sec5 {
+      grid-area: Sec5; }
+
+    .Sec6 {
+      grid-area: Sec6; }
 
     footer {
       grid-area: footer;
