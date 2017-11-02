@@ -21,7 +21,7 @@ footer {
       text-align: center;
       font-family: "Noto+Sans", sans-serif;
       grid-template-columns: 33.3% 33.3% 33.3%;
-      grid-template-areas: "header header header" "menu menu menu" "Sec1 Sec2 Sec3" "Sec4 Sec5 Sec6" "footer footer footer"; }
+      grid-template-areas: "header header header" "menu menu menu" "Sec1 Sec2 Sec3" "text1 text2 text3" "button1 button2 button3" "Sec4 Sec5 Sec6" "text4 text5 text6" "button4 button5 button6" "footer footer footer"; }
 
     header {
       grid-area: header; }
@@ -56,6 +56,24 @@ footer {
     .Sec3 {
       grid-area: Sec3; }
 
+    .text1 {
+      grid-area: text1; }
+
+    .text2 {
+      grid-area: text2; }
+
+    .text3 {
+      grid-area: text3; }
+
+    .button1 {
+      grid-area: button1; }
+
+    .button2 {
+      grid-area: button2; }
+
+    .button3 {
+      grid-area: button3; }
+
     .Sec4 {
       grid-area: Sec4; }
 
@@ -64,6 +82,36 @@ footer {
 
     .Sec6 {
       grid-area: Sec6; }
+
+    .text4 {
+      grid-area: text4; }
+
+    .text5 {
+      grid-area: text5; }
+
+    .text6 {
+      grid-area: text6; }
+
+    .button4 {
+      grid-area: button4; }
+
+    .button5 {
+      grid-area: button5; }
+
+    .button6 {
+      grid-area: button6; }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer; }
 
     footer {
       grid-area: footer;
